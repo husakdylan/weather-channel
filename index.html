@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Channel</title>
+
+    <!-- Font Awesome CDN v7.3.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+    <!-- Fuentes de Google (Plus Jakarta Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Hoja de estilos local -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS de Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <!-- CDN de jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Script de JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="contenedor-app">
+        <h1 class="titulo-principal">
+            <i class="fa-solid fa-cloud-sun-rain"></i> Weather Channel
+        </h1>
+
+        <!-- Buscador superior -->
+        <div class="caja-busqueda">
+            <div class="contenedor-input">
+                <i class="fa-solid fa-magnifying-glass icono-busqueda"></i>
+                <input type="text" id="ciudad-input" class="input-busqueda"
+                    placeholder="Ingresa una ciudad (ej: Tokio, Madrid...)">
+            </div>
+            <button id="btn-buscar" class="btn-agregar">
+                <i class="fa-solid fa-plus"></i> Agregar
+            </button>
+        </div>
+
+        <!-- Contenedor de tarjetas -->
+        <div id="grid-clima" class="grilla-clima"></div>
+    </main>
+
+    <!-- Script de Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+</body>
+
+</html>
